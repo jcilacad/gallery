@@ -1,0 +1,10 @@
+^C:\USERS\JOHNC\DESKTOP\GALLERY_APP\BUILD\WINDOWS\CMAKEFILES\35739137B62F080F79F396108255C80E\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
